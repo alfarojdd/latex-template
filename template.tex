@@ -1,0 +1,85 @@
+% ======================================================================
+% !TeX program = xelatex
+
+\documentclass{report}
+
+% Estilo UMA principal con Malacitana
+\usepackage{template/sty_files/template-uma}
+
+% Portada
+\usepackage{template/sty_files/uma-cover}
+
+% Paquetes útiles
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+
+\begin{document}
+
+% ======================================================================
+% PORTADA
+% ======================================================================
+\UMACover
+    {Título de la Memoria o Práctica}
+    {Juan de Dios Alfaro López}
+    {Grado en Ingeniería Informática}
+    {Asignatura / Facultad / Departamento}
+    {\today}
+
+% ----------------------------------------------------------------------
+% ======================================================================
+% RESUMEN
+% ======================================================================
+\begin{abstract}
+Aquí va un resumen breve del trabajo.
+Explica qué se hace, por qué y cómo.
+\end{abstract}
+
+\newpage
+% ======================================================================
+% ÍNDICE
+% ======================================================================
+\tableofcontents
+\clearpage
+
+% ======================================================================
+\chapter{Introducción}
+% ======================================================================
+
+Aquí puedes empezar a redactar cualquier memoria.
+
+\section{Contexto}
+Texto del contexto.
+
+\section{Objetivos}
+Lista de objetivos.
+
+% ======================================================================
+\chapter{Desarrollo del trabajo}
+% ======================================================================
+
+\section{Material empleado}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/ejemplo.png}
+    \caption{Ejemplo de imagen.}
+\end{figure}
+
+% ======================================================================
+\chapter{Conclusiones}
+% ======================================================================
+
+Escribe aquí las conclusiones.
+
+% ======================================================================
+% Bibliografía
+% ======================================================================
+\begin{thebibliography}{99}
+
+\bibitem{ejemplo}
+Autor. *Título del recurso*. Año.
+
+\end{thebibliography}
+
+\end{document}
