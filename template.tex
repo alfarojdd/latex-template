@@ -14,6 +14,16 @@
 \usepackage{float}
 \usepackage{hyperref}
 
+% --- Bibliografía con BibLaTeX ---
+\usepackage[
+    backend=biber,
+    style=apa,         % o ieee, numeric, authoryear...
+    natbib=true,
+    sorting=nyt
+]{biblatex}
+
+\addbibresource{references.bib}
+
 \begin{document}
 
 % ======================================================================
@@ -75,11 +85,6 @@ Escribe aquí las conclusiones.
 % ======================================================================
 % Bibliografía
 % ======================================================================
-\begin{thebibliography}{99}
-
-\bibitem{ejemplo}
-Autor. *Título del recurso*. Año.
-
-\end{thebibliography}
+\printbibliography[heading=bibintoc]
 
 \end{document}
